@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ig_<%= person.name %></title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>This is ig page of @ <%= person.name %></h1>
+    <button>Follow</button>
+    <button>Message</button> <hr>
+
+    <p>Here is some info about <b><%= person.name %>,</b> <br> <%= person.about %> </p> <hr>
+
+    <h3>Followers: <%= person.followers %> &nbsp;&nbsp;Following: <%= person.following %></h3> <hr>
+
+    <% for (let post of person.posts) { %>
+        <img src="<%= post.image %>" alt="Pics loading..">
+        <h3>Likes: <%= post.likes %> &nbsp;&nbsp; Comments: <%= post.comments %></h3>
+    <% } %>
+    <hr>
+
+    <script src="/script.js"></script>
+
+</body>
+</html>
