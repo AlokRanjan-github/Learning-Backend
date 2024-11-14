@@ -1,0 +1,19 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: burlywood;
+}
+
+.container{
+    border: 2px solid red;
+    background-color: rgb(229, 134, 67);
+    border-radius: 10px;
+    margin: 4px;
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+.container:hover{
+    background-color: chocolate;
+    transform: scale(1.005);
+}
