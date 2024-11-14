@@ -38,3 +38,7 @@ app.get("/posts", (req, res) => {
 app.get("/", (req, res) => {
   res.send("<h1>This is you Home page</h1>");
 });
+
+app.get("/posts/new",(req,res)=>{
+  res.render("new.ejs");
+})
