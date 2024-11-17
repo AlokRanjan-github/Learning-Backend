@@ -2,18 +2,27 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: burlywood;
+    background-color: rgb(108, 225, 251);
 }
 
 .container{
-    border: 2px solid red;
-    background-color: rgb(229, 134, 67);
+    border: 2px solid rgb(0, 55, 255);
+    background-color: rgb(136, 195, 251);
     border-radius: 10px;
     margin: 4px;
     padding: 5px;
     transition: transform 0.3s ease;
 }
 .container:hover{
-    background-color: chocolate;
+    background-color: rgb(166, 150, 236);
     transform: scale(1.005);
+}
+.btn{
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 7px;
+    padding: 5px;
+    margin: 8px;
+    background-color: rgb(69, 69, 251);
+    color: white;
 }

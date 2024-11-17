@@ -35,10 +35,12 @@ app.get("/posts", (req, res) => {
   res.render("index.ejs", { posts });
 });
 
-app.get("/", (req, res) => {
-  res.send("<h1>This is you Home page</h1>");
+app.get("/posts/new", (req, res) => {
+  res.render("new.ejs");
 });
 
-app.get("/posts/new",(req,res)=>{
-  res.render("new.ejs");
-})
+app.post("/posts", (req, res) => {
+  let { username, content } = req.body;
+  posts.push({ username, content });
+  res.redirect("/posts");
+});
